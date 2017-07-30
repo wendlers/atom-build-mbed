@@ -1,0 +1,26 @@
+{
+  "name": "build-mbed",
+  "version": "0.0.0",
+  "description": "Perform ARMmbed builds",
+  "repository": "https://github.com/wendlers/atom-build-mbed",
+  "license": "MIT",
+  "engines": {
+    "atom": "^1.0.0"
+  },
+  "providedServices": {
+    "builder": {
+      "description": "Runs mbed",
+      "versions": {
+        "2.0.0": "provideBuilder"
+      }
+    }
+  },
+  "keywords": [
+    "build",
+    "compile",
+    "cross-compile",
+    "mbed",
+    "productivity"
+  ],
+  "main": "lib/mbed.js"
+}
