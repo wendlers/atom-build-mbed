@@ -1,6 +1,6 @@
 {
   "name": "build-mbed",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Perform mbed-cli builds",
   "repository": "https://github.com/wendlers/atom-build-mbed",
   "license": "MIT",
