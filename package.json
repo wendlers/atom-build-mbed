@@ -22,5 +22,8 @@
     "mbed",
     "productivity"
   ],
-  "main": "lib/mbed.js"
+  "main": "lib/mbed.js",
+  "dependencies": {
+    "ini": "1.3.4"
+  }
 }

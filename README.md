@@ -60,6 +60,25 @@ the builder are (select by pressing `F7`, (re-)execute with `F9`):
 
 The default target is _mbed: release_.
 
+You could provide per project targets by creating the file `targets.ini`
+alongside the `mbed_settings.py` script. Each target is defined by `[targetname]`,
+followed by an entry specifying the parameters which should be passed to `mbed`:
+
+    [fw_one release]
+    params="--source fw_one --source mbed-os --source common --build BUILD/fw_one"
+
+    [fw_one release (debug)]
+    params="--source fw_one --source mbed-os --source common --build BUILD/fw_one --profile mbed-os/tools/profiles/debug.json"
+
+    [fw_two release]
+    params="--source fw_two --source mbed-os --source common --build BUILD/fw_two"
+
+    [fw_two release (debug)]
+    params="--source fw_two --source mbed-os --source common --build BUILD/fw_two --profile mbed-os/tools/profiles/debug.json"
+
+The above example allows to build two different firmwares (one located in `fw_one`, the other in `fw_two`), sharing
+common parts (here `mbed-os` and `common`).
+
 Within the settings dialog of the builder the following could be adjusted:
 
 * _verbosity_: depending on the settings, this adds `--verbose` or
