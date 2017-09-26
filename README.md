@@ -79,6 +79,11 @@ followed by an entry specifying the parameters which should be passed to `mbed`:
 The above example allows to build two different firmwares (one located in `fw_one`, the other in `fw_two`), sharing
 common parts (here `mbed-os` and `common`).
 
+Please note, that when you created a `targets.ini` initially for your project,
+you need to advice `atom-build` to refresh targets with `Build: Refresh Targets`.
+Once `atom-build` is aware of the user targets, they will be refresh automatically
+every time the `targets.ini` is saved.
+
 Within the settings dialog of the builder the following could be adjusted:
 
 * _verbosity_: depending on the settings, this adds `--verbose` or
